@@ -27,7 +27,8 @@ List<Animale> animali = new()
     new Squalo(),
     new Aquila(),
     new Elefante(),
-    new Cane()
+    new Cane(),
+    new PulcinellaDiMare()
 };
 
 foreach (var animale in animali)
