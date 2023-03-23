@@ -6,16 +6,12 @@ using System.Threading.Tasks;
 
 public interface IVolante
 {
-    void Volare()
-    {
-        Console.WriteLine("Sto volando!!!");
-    }
+    public abstract void Volare();
+    
 }
 public interface INuotante
 {
-    void Nuotare()
-    {
-        Console.WriteLine("Sto nuotando!!!");
-    }
+    public abstract void Nuotare();
+
 }
 

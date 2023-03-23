@@ -18,4 +18,8 @@ public class Squalo : Animale, INuotante
     {
         Console.WriteLine("Carnivoro");
     }
+    public void Nuotare()
+    {
+        Console.WriteLine("Sto nuotando!!!");
+    }
 }

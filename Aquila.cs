@@ -18,4 +18,8 @@ public class Aquila : Animale, IVolante
     {
         Console.WriteLine("Carnivoro");
     }
+    public void Volare()
+    {
+        Console.WriteLine("Sto volando!!!");
+    }
 }
