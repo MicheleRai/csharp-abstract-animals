@@ -6,6 +6,10 @@ using System.Threading.Tasks;
 
 public class Squalo : Animale, INuotante
 {
+    public override void Razza()
+    {
+        Console.WriteLine("Squalo");
+    }
     public override void Verso()
     {
         Console.WriteLine("Blob Blob Blob");

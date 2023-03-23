@@ -22,17 +22,21 @@ using System;
 //Questi metodi prendono come parametro un animale che può o volare / nuotare e richiamano il corrispondente metodo Vola() / Nuota().
 //Scrivere un programma che istanzi animali che volano o nuotano e richiamare i metodi FaiVolare / FaiNuotare passandoglieli come parametro.
 
-List <Animale> animali = new List<Animale> ();
-animali.Add(new Squalo());
-animali.Add(new Aquila());
-animali.Add(new Elefante());
-animali.Add(new Cane());
+List<Animale> animali = new()
+{
+    new Squalo(),
+    new Aquila(),
+    new Elefante(),
+    new Cane()
+};
 
 foreach (var animale in animali)
 {
+    animale.Razza();
     animale.Verso();
     animale.Dieta();
     if (animale is IVolante v) v.Volare();
     if (animale is INuotante n) n.Nuotare();
     animale.Dormi();
+    Console.WriteLine("-----------------------------");
 }

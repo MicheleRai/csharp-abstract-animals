@@ -6,6 +6,10 @@ using System.Threading.Tasks;
 
 public class Elefante : Animale
 {
+    public override void Razza()
+    {
+        Console.WriteLine("Elefante");
+    }
     public override void Verso()
     {
         Console.WriteLine("Iiiiiih");

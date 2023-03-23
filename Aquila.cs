@@ -6,6 +6,10 @@ using System.Threading.Tasks;
 
 public class Aquila : Animale, IVolante
 {
+    public override void Razza()
+    {
+        Console.WriteLine("Aquila");
+    }
     public override void Verso()
     {
         Console.WriteLine("Screech Screech Screech");
